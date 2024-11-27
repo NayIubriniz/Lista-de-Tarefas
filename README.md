@@ -19,4 +19,4 @@ Este é um projeto de uma aplicação de **Lista de Tarefas** feita com **Flask*
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seuusuario/lista-de-tarefas.git
+   git clone https://nayiubriniz.github.io/Lista-de-Tarefas/
