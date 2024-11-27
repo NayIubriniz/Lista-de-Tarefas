@@ -16,7 +16,3 @@ Este é um projeto de uma aplicação de **Lista de Tarefas** feita com **Flask*
 - Tailwind CSS
 
 ## Como rodar o projeto
-
-1. Clone o repositório:
-   ```bash
-   git clone https://nayiubriniz.github.io/Lista-de-Tarefas/
