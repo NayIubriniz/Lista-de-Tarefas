@@ -46,7 +46,7 @@ def add_task():
                        (task, False))
         conn.commit()
         conn.close()
-        return redirect(url_for("index"))
+    return redirect(url_for("index"))
 
 
 @app.route("/delete/<int:task_id>")
