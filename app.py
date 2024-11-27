@@ -38,15 +38,21 @@ def index():
 
 @app.route("/add", methods=['POST'])
 def add_task():
-    task = request.form.get("task")
-    if task:
+    try:
+        task = request.form.get("task")
+        if not task:
+            raise ValueError('Tarefa não pode estar vazia')
         conn = get_db_connection()
         cursor = conn.cursor()
         cursor.execute("INSERT INTO tasks (task, done) VALUES (?, ?)",
                        (task, False))
         conn.commit()
         conn.close()
-    return redirect(url_for("index"))
+        print(f'Tarefa adicionada: {task}')
+        return redirect(url_for("index"))
+    except Exception as e:
+        print(f'Erro ao adicionar tarefa: {e}')
+        return 'Erro ao adicionar tarefa', 500
 
 
 @app.route("/delete/<int:task_id>")
