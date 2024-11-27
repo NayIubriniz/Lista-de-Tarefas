@@ -15,4 +15,3 @@ Este é um projeto de uma aplicação de **Lista de Tarefas** feita com **Flask*
 - SQLite
 - Tailwind CSS
 
-## Como rodar o projeto
